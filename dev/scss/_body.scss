@@ -1,0 +1,77 @@
+/*==============================================================================
+# BODY
+==============================================================================*/
+
+body.login {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: linear-gradient(135deg, $curiosity 0%,$calmness 100%);
+  font-family: $font;
+  color: $blank;
+  font-weight: $font-weight;
+  text-transform: lowercase;
+}
+
+.centre-align {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100vw;
+}
+
+h1 {
+  display: block;
+  width: 100vw;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: $font-weight;
+}
+
+a.button {
+  width: 80%;
+  display: block;
+  background: $blank;
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 4rem;
+  text-align: center;
+  color: $calmness;
+  text-decoration: none;
+  margin: 3rem auto 2rem;
+  font-size: 1.5rem;
+  transition: background .3s, opacity .3s;
+  opacity: .8;
+  &:hover,
+  &:active {
+    opacity: 1;
+  }
+}
+
+input {
+  width: 80%;
+  display: block;
+  border: 2px solid $blank;
+  background: none;
+  height: 3rem;
+  border-radius: 4rem;
+  text-align: center;
+  color: $blank;
+  font-size: 1.5rem;
+  outline: none;
+  opacity: 1;
+  transition: background .3s, opacity .3s;
+
+  &:focus {
+    opacity: 1;
+    background: rgba($blank, .1);
+  }
+
+  &.username {
+    margin: 4rem auto 2rem;
+  }
+  &.password {
+    margin: 2rem auto 0;
+  }
+}
